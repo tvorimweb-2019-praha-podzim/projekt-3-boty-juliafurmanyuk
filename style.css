@@ -1,9 +1,20 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+*, ::after, ::before { 
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  font-family: 'Rubik', sans-serif;
+  background-color: #f5f5f5;
+  box-shadow: 8px 8px 8px #bebebe;
+  width: 670px;
+  height: 440px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /*
@@ -21,3 +32,121 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+.slogan {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+.cena {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.zaruka {
+  font-size: 12px;
+}
+
+.nazev {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.velikosti {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.parametr {
+  margin: 30px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.produkt {
+  color: #959595;
+}
+
+.vybrana {
+  color: #f15f42;
+  border: 1px solid #f15f42;
+  border-radius: 100%;
+}
+
+.akce {
+  padding: 12px 24px;
+  display: inline-block;
+  background-color: #f15f42;
+  border-radius: 6px;
+  margin-top: 60px;
+}
+
+.tlacitko {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.zbozi {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 440px;
+  flex-basis: auto;
+}
+
+.detaily {
+  width: 50%;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: white;
+  height: 440px;
+  border-radius: 0 10px 10px 0;
+  flex-basis: auto;
+}
+/*nemohu přijít na to, proč není to stínování zaoblené, je tak pořád ostrá hrana..*/
+
+.popis {
+  margin: 20px 0;
+}
+
+hr {
+  border: 0.5px solid #06d7c1;
+}
+
+.vizual {
+  width: 50%;
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  color: white;
+  border-radius: 10px 0 0 10px;
+  padding: 30px;
+  flex-basis: auto;
+  position: relative;
+}
+
+.bota {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cenovka {
+  text-align: right;
+  width: 100%;
+  position: relative;
+  top: 200px;
+}
+
+li {
+  padding: 8px;
+  margin-top: -20px;
+}
